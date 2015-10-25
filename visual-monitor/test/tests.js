@@ -78,6 +78,12 @@ describe('Visual monitor testing', function() {
             '.text-center h4',
             '.text-center p',
           ],
+        remove:
+          [
+            // Footer fix.
+            '.footer_1',
+            '.footer_2',
+          ],
         screenWidth: selectedCaps == 'chrome' ? [960] : undefined,
       }, resultsCallback)
       .call(done);
